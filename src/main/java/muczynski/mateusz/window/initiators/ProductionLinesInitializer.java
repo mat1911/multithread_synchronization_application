@@ -4,10 +4,10 @@ import javafx.scene.layout.GridPane;
 import muczynski.mateusz.window.GridPaneContent;
 import muczynski.mateusz.window.WindowData;
 
-public class ProductionLinesInitiator {
+public class ProductionLinesInitializer {
     private GridPaneContent gridPaneContent;
 
-    public ProductionLinesInitiator() {
+    public ProductionLinesInitializer() {
         this.gridPaneContent = new GridPaneContent();
     }
 

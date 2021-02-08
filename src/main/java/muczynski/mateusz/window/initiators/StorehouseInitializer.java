@@ -4,13 +4,13 @@ import javafx.scene.layout.GridPane;
 import muczynski.mateusz.window.GridPaneContent;
 import muczynski.mateusz.window.WindowData;
 
-public class StorehouseInitiator {
+public class StorehouseInitializer {
     private final int FIRST_STOREHOUSE_CAPACITY;
     private final int SECOND_STOREHOUSE_CAPACITY;
     private GridPaneContent gridPaneContent;
 
 
-    public StorehouseInitiator(int FIRST_STOREHOUSE_CAPACITY, int SECOND_STOREHOUSE_CAPACITY) {
+    public StorehouseInitializer(int FIRST_STOREHOUSE_CAPACITY, int SECOND_STOREHOUSE_CAPACITY) {
         this.FIRST_STOREHOUSE_CAPACITY = FIRST_STOREHOUSE_CAPACITY;
         this.SECOND_STOREHOUSE_CAPACITY = SECOND_STOREHOUSE_CAPACITY;
         this.gridPaneContent = new GridPaneContent();

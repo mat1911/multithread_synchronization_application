@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>muczynski.mateusz</groupId>
-    <artifactId>Projekt_PW_V2</artifactId>
+    <artifactId>multithread_synchronization_application</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Projekt_PW_V2</name>
+    <name>multithread_synchronization_application</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 

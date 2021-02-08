@@ -1,4 +1,4 @@
-package muczynski.mateusz.initiator;
+package muczynski.mateusz.initializer;
 
 import muczynski.mateusz.storehouses.FirstStorehouse;
 import muczynski.mateusz.storehouses.OutputStorehouse;
@@ -7,12 +7,12 @@ import muczynski.mateusz.storehousesManagement.Exporter;
 import muczynski.mateusz.storehousesManagement.ProductionLine;
 import muczynski.mateusz.storehousesManagement.Supplier;
 import muczynski.mateusz.window.animations.IngredientsAnimation;
-import muczynski.mateusz.window.initiators.ProductionLinesInitiator;
-import muczynski.mateusz.window.initiators.StorehouseInitiator;
+import muczynski.mateusz.window.initiators.ProductionLinesInitializer;
+import muczynski.mateusz.window.initiators.StorehouseInitializer;
 
 import java.util.concurrent.Semaphore;
 
-public class InitiateProgram {
+public class Initializer {
     private final int FIRST_STOREHOUSE_CAPACITY = 40; //MAX 40
     private final int SECOND_STOREHOUSE_CAPACITY = 40; // MAX 40
     private final int OUTPUT_STOREHOUSE_CAPACITY = 21; // MAX 21
@@ -36,12 +36,11 @@ public class InitiateProgram {
     private ProductionLine[] productionLines;
 
 
-    public InitiateProgram() {
+    public Initializer() {
         initAllElements();
-        startAllProcesses();
     }
 
-    private void startAllProcesses(){
+    public void startAllProcesses(){
         this.supplier.start();
 
         for (int i = 0; i < NUMBER_OF_PRODUCTION_LINES; i++) {
@@ -59,13 +58,13 @@ public class InitiateProgram {
     }
 
     private void initStorehouses(){
-        StorehouseInitiator storehouseInitiator = new StorehouseInitiator(FIRST_STOREHOUSE_CAPACITY, SECOND_STOREHOUSE_CAPACITY);
+        StorehouseInitializer storehouseInitializer = new StorehouseInitializer(FIRST_STOREHOUSE_CAPACITY, SECOND_STOREHOUSE_CAPACITY);
 
         this.firstStorehouse = new FirstStorehouse(FIRST_STOREHOUSE_CAPACITY);
         this.secondStorehouse = new SecondStorehouse(SECOND_STOREHOUSE_CAPACITY);
         this.outputStorehouse = new OutputStorehouse(OUTPUT_STOREHOUSE_CAPACITY);
 
-        storehouseInitiator.initiateStorehouses();
+        storehouseInitializer.initiateStorehouses();
     }
 
     private void initSemaphores(){
@@ -83,7 +82,7 @@ public class InitiateProgram {
     }
 
     private void initProductionLines(){
-        ProductionLinesInitiator productionLinesInitiator = new ProductionLinesInitiator();
+        ProductionLinesInitializer productionLinesInitializer = new ProductionLinesInitializer();
 
         this.productionLines = new ProductionLine[NUMBER_OF_PRODUCTION_LINES];
 
@@ -104,6 +103,6 @@ public class InitiateProgram {
                     .build();
         }
 
-        productionLinesInitiator.initiateProductionLines(NUMBER_OF_PRODUCTION_LINES);
+        productionLinesInitializer.initiateProductionLines(NUMBER_OF_PRODUCTION_LINES);
     }
 }
