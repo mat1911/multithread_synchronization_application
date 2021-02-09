@@ -1,4 +1,4 @@
-# Application supporting scrum methodology
+# Multithread synchronization application
 
 ## Brief description
 
