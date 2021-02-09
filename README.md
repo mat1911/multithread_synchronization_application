@@ -21,10 +21,10 @@ To change the animation parameters, change the values of the fields in the Initi
 
 Standard situation - production runs fine.
 
-![User projects](https://drive.google.com/uc?export=view&id=1oTaUooVK4oYSAtbWj_kWStkNB94-IWo_)
+![User projects](https://github.com/mat1911/Screenshots/blob/main/Multithread%20app/multithread_screenshot_2.PNG?raw=true)
 
 <br />
 
 Export warehouse is too slow - production lines are blocked.
 
-![User projects](https://drive.google.com/uc?export=view&id=1NmTKp61e1XbFO7Zq4F96FOeUHjmDSUiJ)
+![User projects](https://github.com/mat1911/Screenshots/blob/main/Multithread%20app/multithread_screenshot_1.PNG?raw=true)
